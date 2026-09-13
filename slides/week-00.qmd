@@ -1,0 +1,514 @@
+---
+title: "Course Title"
+subtitle: "Week 0: Slide Templates"
+---
+
+## Slide Title
+
+<!-- Incremental list: bullets appear one at a time -->
+
+<br>
+
+::: {.incremental}
+- First point
+- Second point
+- Third point
+- Fourth point
+:::
+
+## Slide Title
+
+<!-- Table: striped rows with column widths set in the caption attributes -->
+
+<br>
+
+| Column A      | Column B | Column C |
+|---------------|----------|----------|
+| 10:00 – 10:50 | 50 min   | Item     |
+| 10:50 – 11:00 | 10 min   | ☕ Item   |
+| 11:00 – 11:50 | 50 min   | Item     |
+| 11:50 – 12:00 | 10 min   | ☕ Item   |
+| 12:00 – 12:50 | 50 min   | Item     |
+: {.striped tbl-colwidths="[42,33,25]"}
+
+# Section Title {.dark-slide .clean-slide}
+
+<!-- Section divider: dark background, no footer, logo, or slide number -->
+
+## Slide Title
+
+<!-- Text and image: 50/10/40 columns with a spacer column in the middle -->
+
+<br>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- First point
+- Second point
+- Third point
+- Fourth point
+
+:::
+::: {.column width="10%"}
+
+:::
+::: {.column width="40%"}
+
+![Caption text. Photo: Jan Baborák, Unsplash.](../assets/images/week-00/chicken.jpg){fig-align="left" height="700px"}
+
+:::
+::::
+
+## Slide Title
+
+<!-- Two images side by side, each with a caption, plus speaker notes -->
+
+<br>
+
+:::: {.columns}
+::: {.column width="40%"}
+
+![Caption text. Photo: Ravi Singh, Unsplash.](../assets/images/week-00/duck.jpg){fig-align="left"}
+
+:::
+::: {.column width="10%"}
+
+:::
+::: {.column width="40%"}
+
+![Caption text. Photo: Jan Baborák, Unsplash.](../assets/images/week-00/chicken.jpg){fig-align="left" height="600px"}
+
+:::
+::::
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
+
+## Slide Title
+
+<!-- Full-width image: stretched to fill the remaining height of the slide -->
+
+<br>
+
+![](../assets/images/week-00/duck.jpg){.r-stretch fig-align="center"}
+
+## {.clean-slide}
+
+<!-- Image only: no title, footer, logo, or slide number, with a centred credit line -->
+
+![](../assets/images/week-00/duck.jpg){fig-align="center" height="900px"}
+
+:::{style="text-align: center; font-size: 0.7em;"}
+Caption text. Photo: Ravi Singh, Unsplash.
+:::
+
+## {.full-bleed background-image="../assets/images/week-00/duck.jpg" background-size="cover"}
+
+<!-- Full-bleed background image with overlay text -->
+
+::: {style="color: white; text-shadow: 1px 1px 3px black;"}
+Overlay text
+:::
+
+## {.clean-slide .center}
+
+<!-- Pull quote: centred, enlarged, with an attribution line -->
+
+[*“Quotation text. A second sentence of the quotation, long enough to wrap onto a second line.”*]{style="font-size: 1.7em;"}
+
+<br>
+
+<br>
+
+[Author Name. *Source Title*. Year.]{style="font-size: 0.8em;"}
+
+## {.clean-slide}
+
+<!-- Question slide: text scaled to fit, line breaks forced with <br> -->
+
+::: {.r-fit-text}
+[First line of a question?]{style="color: gray;"}<br>
+[Second line of]{style="color: gray;"}<br>
+[a question?]{style="color: gray;"}<br>
+:::
+
+# {.dark-slide .clean-slide}
+
+<!-- Break slide: dark background, text scaled to fit -->
+
+::: {.r-fit-text}
+Break ☕️
+:::
+
+## Slide Title
+
+<!-- Code: explanation and code block on the left, image on the right -->
+
+<br>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+Body text introducing the code:
+
+<br>
+
+```javascript
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background('white');
+  fill('red');
+  circle(200, 200, 50);
+}
+```
+
+<br>
+
+:::{.callout-note}
+Callout text. Code blocks have a copy button in the top-right corner when viewed in a browser.
+:::
+
+:::
+::: {.column width="10%"}
+
+:::
+::: {.column width="40%"}
+
+![](../assets/images/week-00/chicken.jpg){fig-align="left" height="700px"}
+
+:::
+::::
+
+## Slide Title
+
+<!-- Callouts: note, warning, important, tip -->
+
+::: {.callout-note}
+Note callout text.
+:::
+
+::: {.callout-warning}
+Warning callout text.
+:::
+
+::: {.callout-important}
+Important callout text.
+:::
+
+::: {.callout-tip}
+## Tip with a title
+Tip callout text.
+:::
+
+## Slide Title {.dark-slide}
+
+<!-- Dark slide with body text, accent text, and a callout -->
+
+Body text. [Accent text.]{.accent}
+
+<br>
+
+::: {.callout-note}
+Note callout text on a dark slide.
+:::
+
+## Slide Title
+
+<!-- Activity: instructions and timing on the left, tips in a callout on the right -->
+
+<br>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+Instructions for the activity.
+
+<br>
+
+**~10 minutes.**
+
+<br>
+
+Prompts:
+
+- First prompt
+- Second prompt
+- Third prompt
+
+:::
+::: {.column width="10%"}
+
+:::
+::: {.column width="40%"}
+
+<br>
+
+::: {.callout-note}
+### Callout title
+- First tip
+- Second tip
+- Third tip
+:::
+
+:::
+::::
+
+## Slide Title
+
+<!-- Assignment: description on the left, weighting and due date badges on the right -->
+
+<br>
+
+:::: {.columns}
+::: {.column width="70%"}
+Body text describing the item.
+
+<br>
+
+Components:
+
+1. First component
+2. Second component
+3. Third component
+
+<br>
+
+Body text continues.
+
+:::
+::: {.column width="10%"}
+
+:::
+::: {.column width="20%"}
+
+\
+\
+\
+\
+[40%]{.mono-highlighted}
+
+[\-\-\-\-> due week 5]{.mono-highlighted}
+
+:::
+::::
+
+## Slide Title
+
+<!-- Fragments: each column appears on a click -->
+
+:::: {.columns}
+::: {.column .fragment width="40%"}
+
+<br>
+
+**First heading**
+
+- First point
+- Second point
+- Third point
+
+:::
+::: {.column width="10%"}
+
+:::
+::: {.column .fragment width="40%"}
+
+<br>
+
+**Second heading**
+
+- First point
+- Second point
+- Third point
+
+:::
+::::
+
+## Slide Title
+
+<!-- Aside: a small citation line at the bottom of the slide -->
+
+<br>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Subheading
+
+<br>
+
+- First point
+- Second point
+- Third point
+
+:::
+::: {.column width="10%"}
+
+:::
+::: {.column width="40%"}
+
+![Caption text. Photo: Ravi Singh, Unsplash.](../assets/images/week-00/duck.jpg){fig-align="left"}
+
+:::
+::::
+
+::: aside
+Author Name. [Source Title](https://example.com). Year.
+:::
+
+## Slide Title
+
+<!-- Emoji list: emoji replace the bullet markers -->
+
+<br>
+
+Body text:
+
+::: {.emoji-list}
+- 💻 First point
+- 📒 Second point
+- 🧐 Third point
+:::
+
+## Schedule {.smaller style="font-size: 0.6em"}
+
+<!-- Schedule: two tables of time slots side by side, with instructions on the right -->
+
+<br>
+
+:::: {.columns}
+::: {.column width="38%"}
+
+**Group A:**
+
+| Time  | Name |
+|-------|------|
+| 10:00 | Name 1 |
+| 10:10 | Name 2 |
+| 10:20 | Name 3 |
+| 10:30 | Name 4 |
+| 10:40 | Name 5 |
+| 10:50 | Name 6 |
+| 11:00 | Name 7 |
+| 11:10 | Name 8 |
+| 11:20 | Name 9 |
+| 11:30 | Name 10 |
+| 11:40 | Name 11 |
+| 11:50 | Name 12 |
+| 12:00 | Name 13 |
+| 12:10 | Name 14 |
+| 12:20 | Name 15 |
+| 12:30 | Name 16 |
+| 12:40 | Name 17 |
+| 12:50 | Name 18 |
+: {.striped tbl-colwidths="[35,65]"}
+
+:::
+::: {.column width="38%"}
+
+**Group B:**
+
+| Time  | Name |
+|-------|------|
+| 10:00 | Name 19 |
+| 10:10 | Name 20 |
+| 10:20 | Name 21 |
+| 10:30 | Name 22 |
+| 10:40 | Name 23 |
+| 10:50 | Name 24 |
+| 11:00 | Name 25 |
+| 11:10 | Name 26 |
+| 11:20 | Name 27 |
+| 11:30 | Name 28 |
+| 11:40 | Name 29 |
+| 11:50 | Name 30 |
+| 12:00 | Name 31 |
+| 12:10 | Name 32 |
+| 12:20 | Name 33 |
+| 12:30 | Name 34 |
+| 12:40 | Name 35 |
+| 12:50 | Name 36 |
+: {.striped tbl-colwidths="[35,65]"}
+
+:::
+::: {.column width="24%"}
+:::: {style="font-size: 1.67em"}
+<br>
+<br>
+Instruction text.
+
+<br>
+
+Slots are 10 minutes.
+
+<br>
+**Further instruction text.**
+::::
+:::
+::::
+
+## Slide Title {.no-footer}
+
+<!-- No footer -->
+
+Body text. The footer is hidden on this slide.
+
+## Slide Title {.no-logo}
+
+<!-- No logo -->
+
+Body text. The logo is hidden on this slide.
+
+## Slide Title {data-hide-slide-number="true"}
+
+<!-- Hidden slide number -->
+
+Body text. The slide number is hidden on this slide.
+
+## Slide Title {.clean-slide}
+
+<!-- Clean slide: no footer, logo, or slide number -->
+
+Body text. The footer, logo, and slide number are all hidden on this slide.
+
+# Section Title {.dark-slide .clean-slide}
+
+<!-- Closing pair: dark section divider followed by a task list with a due date badge -->
+
+## Slide Title
+
+<br>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- First task
+- Second task
+- Third task
+- Fourth task
+
+<br>
+
+[\-\-\-\-> due next week]{.mono-highlighted}
+
+<br>
+
+::: {.callout-important}
+Important callout text.
+:::
+
+:::
+::: {.column width="10%"}
+
+:::
+::: {.column width="40%"}
+
+![Caption text. Photo: Jan Baborák, Unsplash.](../assets/images/week-00/chicken.jpg){fig-align="left" height="700px"}
+
+:::
+::::

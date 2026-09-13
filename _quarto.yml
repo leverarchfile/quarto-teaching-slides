@@ -1,0 +1,18 @@
+project:
+  type: default
+  output-dir: _output
+
+format:
+  revealjs:
+    theme: [default, assets/custom.scss]
+    embed-resources: true
+    width: 1920
+    height: 1080
+    slide-number: true
+    progress: false
+    logo: assets/logo-black.png
+    footer: "Course Title &nbsp;&nbsp;·&nbsp;&nbsp; Institution Name"
+    transition: none
+    include-after-body: assets/slide-controls.js
+
+filters: []

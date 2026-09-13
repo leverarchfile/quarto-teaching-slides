@@ -1,0 +1,149 @@
+/*-- scss:defaults --*/
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+// Colours
+$body-bg: #F0F0F0;
+$body-color: #222222;
+$link-color: #0066CC;
+$accent: #CB4B16;
+$presentation-heading-color: #222222;
+
+// Dark slide variables
+$dark-background: #222222;
+$dark-text: #F0F0F0;
+
+// Typography
+$font-family-sans-serif: 'DM Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+$presentation-heading-font: 'DM Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+$presentation-heading-font-weight: 700;
+
+// Code
+$code-block-bg: darken(#F0F0F0, 5%);
+
+// Callout colours, chosen to contrast against the light grey background
+$callout-color-note: #0066CC;
+$callout-color-warning: #CB4B16;
+$callout-color-tip: #1E7B00;
+$callout-color-important: #CC2200;
+
+/*-- scss:rules --*/
+
+.reveal .slide h1,
+.reveal .slide h2,
+.reveal .slide h3,
+.reveal .slide h4 {
+  text-transform: none;
+}
+
+.accent {
+  color: $accent;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+}
+
+.mono-highlighted {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  background-color: #04CC74;
+}
+
+.reveal .footer {
+  font-size: 12px !important;
+}
+
+.reveal .slide code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+}
+
+// Only left border for callouts
+.reveal .slide div.callout {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+// Remove rounded corners
+.reveal div.sourceCode {
+  border-radius: 0;
+}
+
+.reveal .slide div.callout {
+  border-radius: 0;
+}
+
+// Dark slide variant
+.dark-slide {
+  background-color: $dark-background !important;
+  color: $dark-text !important;
+
+  // Callout backgrounds
+  div.callout-note.callout-style-default .callout-title {
+    background-color: darken($callout-color-note, 25%) !important;
+  }
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: darken($callout-color-warning, 25%) !important;
+  }
+  div.callout-important.callout-style-default .callout-title {
+    background-color: darken($callout-color-important, 25%) !important;
+  }
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: darken($callout-color-tip, 25%) !important;
+  }
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: darken($callout-color-caution, 25%) !important;
+  }
+  div.callout-note.callout-style-default .callout-title p,
+  div.callout-warning.callout-style-default .callout-title p,
+  div.callout-important.callout-style-default .callout-title p,
+  div.callout-tip.callout-style-default .callout-title p,
+  div.callout-caution.callout-style-default .callout-title p {
+    color: #F0F0F0 !important;
+  }
+}
+
+.dark-slide h1,
+.dark-slide h2,
+.dark-slide h3,
+.dark-slide h4 {
+  color: $dark-text !important;
+}
+
+// Striped tables (light slides)
+.reveal table.table-striped tbody tr:nth-child(odd) td,
+.reveal table.table-striped tbody tr:nth-child(odd) th {
+  background-color: darken($body-bg, 8%);
+}
+
+// Striped tables (dark slides)
+.dark-slide table.table-striped tbody tr:nth-child(odd) td,
+.dark-slide table.table-striped tbody tr:nth-child(odd) th {
+  background-color: lighten($dark-background, 12%) !important;
+}
+
+// Hover rows (light slides)
+.reveal table.table-hover tbody tr:hover td,
+.reveal table.table-hover tbody tr:hover th {
+  background-color: darken($body-bg, 14%);
+}
+
+// Hover rows (dark slides)
+.dark-slide table.table-hover tbody tr:hover td,
+.dark-slide table.table-hover tbody tr:hover th {
+  background-color: lighten($dark-background, 20%) !important;
+}
+
+// Emoji bullet lists — type emoji at the start of each list item
+// Usage: ::: {.emoji-list}
+//        - 🚀 First point
+//        - 🎉 Second point
+//        :::
+.reveal .emoji-list ul {
+  list-style: none;
+  padding-left: 0;
+}

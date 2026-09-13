@@ -1,0 +1,8 @@
+_output/
+.env
+
+/.quarto/
+**/*.quarto_ipynb
+
+# Temporary symlink created by build.sh and dev.sh
+slides/assets
