@@ -16,6 +16,10 @@ subtitle: "Week 0: Slide Templates"
 - Fourth point
 :::
 
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
+
 ## Slide Title
 
 <!-- Table: striped rows with column widths set in the caption attributes -->
@@ -31,9 +35,17 @@ subtitle: "Week 0: Slide Templates"
 | 12:00 – 12:50 | 50 min   | Item     |
 : {.striped tbl-colwidths="[42,33,25]"}
 
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
+
 # Section Title {.dark-slide .clean-slide}
 
 <!-- Section divider: dark background, no footer, logo, or slide number -->
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
 
 ## Slide Title
 
@@ -60,39 +72,9 @@ subtitle: "Week 0: Slide Templates"
 :::
 ::::
 
-## Slide Title
-
-<!-- Two images side by side, each with a caption, plus speaker notes -->
-
-<br>
-
-:::: {.columns}
-::: {.column width="40%"}
-
-![Caption text. Photo: Ravi Singh, Unsplash.](../assets/images/week-00/duck.jpg){fig-align="left"}
-
-:::
-::: {.column width="10%"}
-
-:::
-::: {.column width="40%"}
-
-![Caption text. Photo: Jan Baborák, Unsplash.](../assets/images/week-00/chicken.jpg){fig-align="left" height="600px"}
-
-:::
-::::
-
 ::: {.notes}
 Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
 :::
-
-## Slide Title
-
-<!-- Full-width image: stretched to fill the remaining height of the slide -->
-
-<br>
-
-![](../assets/images/week-00/duck.jpg){.r-stretch fig-align="center"}
 
 ## {.clean-slide}
 
@@ -104,12 +86,20 @@ Speaker notes go here. They are visible in the presenter view (press S) and in t
 Caption text. Photo: Ravi Singh, Unsplash.
 :::
 
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
+
 ## {.full-bleed background-image="../assets/images/week-00/duck.jpg" background-size="cover"}
 
 <!-- Full-bleed background image with overlay text -->
 
 ::: {style="color: white; text-shadow: 1px 1px 3px black;"}
 Overlay text
+:::
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
 :::
 
 ## {.clean-slide .center}
@@ -124,14 +114,21 @@ Overlay text
 
 [Author Name. *Source Title*. Year.]{style="font-size: 0.8em;"}
 
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
+
 ## {.clean-slide}
 
 <!-- Question slide: text scaled to fit, line breaks forced with <br> -->
 
 ::: {.r-fit-text}
 [First line of a question?]{style="color: gray;"}<br>
-[Second line of]{style="color: gray;"}<br>
-[a question?]{style="color: gray;"}<br>
+[Second line of a question?]{style="color: gray;"}
+:::
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
 :::
 
 # {.dark-slide .clean-slide}
@@ -142,9 +139,13 @@ Overlay text
 Break ☕️
 :::
 
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
+
 ## Slide Title
 
-<!-- Code: explanation and code block on the left, image on the right -->
+<!-- Code: explanation and code block on the left, callout below -->
 
 <br>
 
@@ -179,10 +180,12 @@ Callout text. Code blocks have a copy button in the top-right corner when viewed
 :::
 ::: {.column width="40%"}
 
-![](../assets/images/week-00/chicken.jpg){fig-align="left" height="700px"}
-
 :::
 ::::
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
 
 ## Slide Title
 
@@ -205,16 +208,30 @@ Important callout text.
 Tip callout text.
 :::
 
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
+
 ## Slide Title {.dark-slide}
 
 <!-- Dark slide with body text, accent text, and a callout -->
+
+<br>
 
 Body text. [Accent text.]{.accent}
 
 <br>
 
+The logo switches to the white version on dark slides.
+
+<br>
+
 ::: {.callout-note}
 Note callout text on a dark slide.
+:::
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
 :::
 
 ## Slide Title
@@ -258,44 +275,9 @@ Prompts:
 :::
 ::::
 
-## Slide Title
-
-<!-- Assignment: description on the left, weighting and due date badges on the right -->
-
-<br>
-
-:::: {.columns}
-::: {.column width="70%"}
-Body text describing the item.
-
-<br>
-
-Components:
-
-1. First component
-2. Second component
-3. Third component
-
-<br>
-
-Body text continues.
-
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
 :::
-::: {.column width="10%"}
-
-:::
-::: {.column width="20%"}
-
-\
-\
-\
-\
-[40%]{.mono-highlighted}
-
-[\-\-\-\-> due week 5]{.mono-highlighted}
-
-:::
-::::
 
 ## Slide Title
 
@@ -329,9 +311,13 @@ Body text continues.
 :::
 ::::
 
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
+
 ## Slide Title
 
-<!-- Aside: a small citation line at the bottom of the slide -->
+<!-- Aside: a quotation with a small citation line at the bottom of the slide -->
 
 <br>
 
@@ -342,9 +328,7 @@ Body text continues.
 
 <br>
 
-- First point
-- Second point
-- Third point
+*“Quotation text. A second sentence of the quotation, long enough to wrap onto a second line.”*
 
 :::
 ::: {.column width="10%"}
@@ -361,18 +345,8 @@ Body text continues.
 Author Name. [Source Title](https://example.com). Year.
 :::
 
-## Slide Title
-
-<!-- Emoji list: emoji replace the bullet markers -->
-
-<br>
-
-Body text:
-
-::: {.emoji-list}
-- 💻 First point
-- 📒 Second point
-- 🧐 Third point
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
 :::
 
 ## Schedule {.smaller style="font-size: 0.6em"}
@@ -452,33 +426,65 @@ Slots are 10 minutes.
 :::
 ::::
 
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
+
 ## Slide Title {.no-footer}
 
 <!-- No footer -->
 
+<br>
+
 Body text. The footer is hidden on this slide.
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
 
 ## Slide Title {.no-logo}
 
 <!-- No logo -->
 
+<br>
+
 Body text. The logo is hidden on this slide.
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
 
 ## Slide Title {data-hide-slide-number="true"}
 
 <!-- Hidden slide number -->
 
+<br>
+
 Body text. The slide number is hidden on this slide.
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
 
 ## Slide Title {.clean-slide}
 
 <!-- Clean slide: no footer, logo, or slide number -->
 
+<br>
+
 Body text. The footer, logo, and slide number are all hidden on this slide.
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
 
 # Section Title {.dark-slide .clean-slide}
 
 <!-- Closing pair: dark section divider followed by a task list with a due date badge -->
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
 
 ## Slide Title
 
@@ -512,3 +518,7 @@ Important callout text.
 
 :::
 ::::
+
+::: {.notes}
+Speaker notes go here. They are visible in the presenter view (press S) and in the speaker HTML, and are removed entirely from the student HTML.
+:::
