@@ -191,6 +191,8 @@ Speaker notes go here. They are visible in the presenter view (press S) and in t
 
 <!-- Callouts: note, warning, important, tip -->
 
+<br>
+
 ::: {.callout-note}
 Note callout text.
 :::
