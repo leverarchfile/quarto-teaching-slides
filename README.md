@@ -89,7 +89,7 @@ Custom classes defined in `assets/custom.scss`:
 - `[text]{.mono-highlighted}`: monospace text on a highlighted background, used for weightings and due dates
 - `::: {.emoji-list}`: list items with an emoji in place of each bullet
 
-Rendered versions of the template deck (speaker HTML, student HTML, and PDF) are in `example-outputs/`. The sample images are from Unsplash; see `assets/images/week-00/image-credits.md`.
+Rendered versions of the template deck (speaker HTML and student HTML) are in `example-outputs/`. The sample images are from Unsplash; see `assets/images/week-00/image-credits.md`.
 
 ## Customising
 
